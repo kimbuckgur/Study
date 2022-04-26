@@ -1,1 +1,50 @@
-export const postArray = [{}];
+export const postArray = [
+  {
+    id: 1,
+    userId: "홍길동",
+    title: "난천 캠핑장",
+    picture: "사진",
+    totalLike: 230,
+    totalcomment: 12,
+  },
+  {
+    id: 2,
+    userId: "홍길동",
+    title: "난천 캠핑장",
+    picture: "사진",
+    totalLike: 230,
+    totalcomment: 12,
+  },
+  {
+    id: 3,
+    userId: "홍길동",
+    title: "난천 캠핑장",
+    picture: "사진",
+    totalLike: 230,
+    totalcomment: 12,
+  },
+  {
+    id: 4,
+    userId: "홍길동",
+    title: "난천 캠핑장",
+    picture: "사진",
+    totalLike: 230,
+    totalcomment: 12,
+  },
+//   {
+//     id: 5,
+//     userId: "홍길동",
+//     title: "난천 캠핑장",
+//     picture: "사진",
+//     totalLike: 230,
+//     totalcomment: 12,
+//   },
+//   {
+//     id: 6,
+//     userId: "홍길동",
+//     title: "난천 캠핑장",
+//     picture: "사진",
+//     totalLike: 230,
+//     totalcomment: 12,
+//   },
+];
