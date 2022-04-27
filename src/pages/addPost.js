@@ -13,9 +13,10 @@ import imageCompression from "browser-image-compression";
 import { PageTitle } from "../components/pageTitle";
 
 import { LoadingIndicator } from "../components/loadingIndicator";
-import { BtnComponent as Btn } from "../components/BtnComponent";
+import { AddBtnComponent as Btn } from "../components/AddBtnComponent";
 import { PlaceSearch } from "../modals/placeSearch";
 import Checkinfo from "../components/Checkinfo";
+import StarRatingCheck from "../components/starRatingCheck";
 
 import markerImg from "../img/marker.png";
 
@@ -252,6 +253,12 @@ const OuterCheckContainer = styled.section`
   }
 `;
 
+const StarCheckContainer = styled.div`
+  margin-top: 20px;
+  height: 20px;
+  font-size: 2rem;
+`;
+
 function AddPost() {
   const navigate = useNavigate();
 
@@ -275,7 +282,9 @@ function AddPost() {
   const [description, setDesctription] = useState("");
 
   const [checkDetail, setCheckDetail] = useState(null);
-  console.log(checkDetail);
+  // console.log(checkDetail);
+  const [checkRating, setCheckRating] = useState(0);
+  // console.log(checkRating)
 
   const [openSearchModal, setOpenSearchModal] = useState(false);
 
@@ -472,8 +481,8 @@ function AddPost() {
     }
   };
 
-  // console.log(location);
-  // console.log(address);
+  console.log(location);
+  console.log(address);
 
   return (
     <Container>
@@ -538,12 +547,18 @@ function AddPost() {
         </h4>
 
         <OuterCheckContainer>
-          <h3 className="category">추가 정보 체크</h3>
+          <h3 className="category">추가 정보</h3>
           <Checkinfo
             checkDetail={checkDetail}
             setCheckDetail={setCheckDetail}
           />
         </OuterCheckContainer>
+
+        <h3 className="category"> 캠핑장 어떠셨나요? </h3>
+        <StarCheckContainer>
+          <StarRatingCheck setCheckRating={setCheckRating} />
+        </StarCheckContainer>
+
         <BtnContainer>
           {" "}
           <Btn width={"100%"}>게시물 등록하기</Btn>

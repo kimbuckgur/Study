@@ -9,12 +9,18 @@ const MainBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media screen and (max-width: 500px) {
+    width: 100%;
+  }
 `;
 
 const TextBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  @media screen and (max-width: 500px) {
+    width: 100%;
+  }
 `;
 
 const PageTitle = styled.p`

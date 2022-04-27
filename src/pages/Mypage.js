@@ -1,9 +1,12 @@
-import React from "react";
+import { useEffect } from "react";
+import styled from "styled-components";
 
 function Mypage() {
   return (
     <>
-      <div>Mypage</div>
+      <div>
+        <span>마이페이지</span>
+      </div>
     </>
   );
 }

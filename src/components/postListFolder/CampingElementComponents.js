@@ -23,7 +23,8 @@ const CampingElement = styled.div`
   overflow: hidden;
   &&:hover {
     cursor: pointer;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.9);
   }
 `;
 
